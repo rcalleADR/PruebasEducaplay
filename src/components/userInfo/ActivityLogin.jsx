@@ -1,6 +1,6 @@
-import classes from './userInfo.module.scss'
+import classes from './activityLogin.module.scss'
 
-function UserInfo() {
+function ActivityLogin() {
     return (
         <div className="activityLogin">
             <span className={classes.img}>
@@ -17,4 +17,4 @@ function UserInfo() {
     );
 }
 
-export default UserInfo
+export default ActivityLogin;

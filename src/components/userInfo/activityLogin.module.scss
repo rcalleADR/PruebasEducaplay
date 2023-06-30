@@ -1,0 +1,97 @@
+// ================== Login ==================== */
+.activityLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: calc(100% - 32px);
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-in-out;
+
+    &__user,
+    .imgUserPlayer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        margin-right: 0.5rem;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1px solid white;
+        transform: scale(1);
+        transition: all .15s ease;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
+        @media (orientation: landscape) and (max-height: 300px) {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &__txt {
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        color: white;
+        line-height: 1;
+        letter-spacing: 0.6px;
+
+        .activityLogin__notIdentified {
+            font-size: 18px;
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+
+            @media (orientation: landscape) and (max-height: 300px) {
+                font-size: 14px;
+            }
+        }
+
+        &>span {
+            display: inline-flex;
+            font-family: "Nunito", Helvetica, Arial, sans-serif;
+            line-height: 1;
+            font-size: 16px;
+
+            // portraitt educaplay  
+            @media screen and (max-width: 570px) and (orientation: portrait) {
+                font-size: 14px;
+            }
+
+            // Lanscape educaplay  
+            @media screen and (max-width: 1024px) {
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__identified {
+        display: none !important;
+        margin-right: 0.25rem;
+    }
+
+    &__name {
+        font-family: "Nunito", Helvetica, Arial, sans-serif;
+        font-weight: 900;
+    }
+
+    &:hover {
+        .activityLogin__user {
+            transform: scale(1.1);
+            transition: all .15s ease;
+        }
+
+        .activityLogin__notIdentified {
+            text-decoration: underline;
+        }
+    }
+}
