@@ -1,0 +1,44 @@
+.img{
+    text-rendering: optimizeLegibility;
+    word-break: break-word;
+    user-select: none;
+    pointer-events: all;
+    text-align: center;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid white;
+    transform: scale(1);
+    transition: all 0.15s ease;
+}
+
+.title {
+    text-rendering: optimizeLegibility;
+    word-break: break-word;
+    user-select: none;
+    pointer-events: all;
+    text-align: center;
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: black;
+    line-height: 1;
+    letter-spacing: 0.6px;
+}

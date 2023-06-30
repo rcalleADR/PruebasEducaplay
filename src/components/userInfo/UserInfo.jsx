@@ -1,4 +1,4 @@
-import classes from './userInfo.module.css'
+import classes from './userInfo.module.scss'
 
 function UserInfo() {
     return (
