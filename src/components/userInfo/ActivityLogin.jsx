@@ -1,17 +1,18 @@
 import classes from './activityLogin.module.scss'
 
-function ActivityLogin() {
+function ActivityLogin(props) {
+    const user = props.user;
     return (
-        <div className="activityLogin">
-            <span className={classes.img}>
-                <img src="https://d2mxgq73d0f24i.cloudfront.net/images/imagenes/img_6893755_2184.jpg" width="74" height="76" alt=""/>
+        <div className={classes.activityLogin}>
+            <span className={classes.activityLogin__user}>
+                <img src={user.imageSource} width="74" height="76" alt=""/>
             </span>
-            <div className="activityLogin__txt">
-                <span id="activityLogin__identified" className="activityLogin__identified"></span>
+            <div className={classes.activityLogin__txt}>
+                <span id="activityLogin__identified" className={classes.activityLogin__identified}></span>
                 <span className={classes.title}>
-                    Ricardo .
+                    { user.name } {user.lastname}
                 </span>
-                <span id="activityLogin__identified2" className="activityLogin__identified2"></span>
+                <span id="activityLogin__identified2" className={classes.activityLogin__identified2}></span>
             </div>
         </div>
     );
