@@ -1,0 +1,33 @@
+.button {
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    font-family: "Nunito", "Segoe UI", Segoe, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    outline: 0;
+    min-width: 320px;
+    height: 3.5rem;
+    border-radius: 1.75rem;
+    font-size: 1.25rem;
+    color: #070e00;
+    background: #f2ca0d;
+    border: 1px solid #f2ca0d;
+
+    &:not(:disabled) {
+        cursor: pointer;
+    }
+}
+
+.svg {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
