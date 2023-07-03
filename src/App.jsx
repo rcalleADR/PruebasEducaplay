@@ -1,7 +1,4 @@
-import Button from './components/Button/Button'
-import ActivityLogin from './components/userInfo/ActivityLogin'
-import RestartIcon from './icons/RestartIcon';
-import StartIcon from './icons/StartIcon';
+import MainMenu from './components/screens/MainMenu';
 
   const mockUser = {
     name: 'Edu',
@@ -17,17 +14,7 @@ function App() {
   }
 
   return (
-    <>
-      <h1>Yes or No</h1>
-      <ActivityLogin user={mockUser}/>
-      <Button className='classssse' icon={<StartIcon />} onClick={handleClick}>
-        Comenzar
-      </Button>
-      <hr/>
-      <Button className='classssse' icon={<RestartIcon />}>
-        Reintentar
-      </Button>
-    </>
+    <MainMenu user={mockUser} onStart={handleClick}/>
   )
 }
 
