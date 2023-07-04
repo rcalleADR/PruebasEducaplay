@@ -1,0 +1,38 @@
+.e__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+        width: 64px;
+        height: auto;
+        filter: drop-shadow(0 4px 0 rgba(0, 0, 0, 0.55));
+        @media (min-width: 768px) {
+            .g__hd .e__logo svg {
+                width: 80px;
+                filter: drop-shadow(0 5px 0 rgba(0, 0, 0, 0.55));
+            }
+        }
+        @media (min-width: 1024px) {
+            .g__hd .e__logo svg {
+                width: 96px;
+                filter: drop-shadow(0 5px 0 rgba(0, 0, 0, 0.55));
+            }
+        }
+        @media (min-width: 1920px) {
+            .g__hd .e__logo svg {
+                width: 124px;
+                filter: drop-shadow(0 8px 0 rgba(0, 0, 0, 0.55));
+            }
+        }
+        @media (min-width: 2800px) {
+            width: 224px;
+            filter: drop-shadow(0 14px 0 rgba(0, 0, 0, 0.55));
+        }
+        //Movil landscape mini
+        @media only screen 
+        and (max-height: 300px) 
+        and (orientation: landscape) {
+            width: 48px;
+        }
+    }
+}

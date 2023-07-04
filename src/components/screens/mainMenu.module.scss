@@ -1,0 +1,343 @@
+.background {
+    background: radial-gradient(circle, #fafff3 0%, #6eb118 35%, black 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+    //Movil landscape mini
+    @media only screen  and (max-height: 300px) and (orientation: landscape) {
+        padding: 8px 0;
+    }
+}
+
+.gameData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    @media (orientation: landscape) {
+        flex-direction: row;
+    }
+    @media (min-width: 768px) {
+        .gameData {
+            padding-top: 80px;
+        }
+    }
+    @media (min-width: 1024px) {
+        .gameData {
+            padding-top: 96px;
+        }
+    }
+    @media (min-width: 1920px) {
+        .gameData {
+            padding-top: 124px;
+        }
+    }
+    @media (min-width: 2800px) {
+        padding-top: 224px;
+    }
+    //Movil landscape mini
+    @media only screen and (max-height: 300px) and (orientation: landscape) {
+        padding-top: 48px;
+    }
+}
+.imageWrapper {
+    display: flex;
+    align-items: center;
+    min-width: 33%;
+    height: 100%;
+    max-height: -webkit-fill-available;
+    @media (orientation: landscape) {
+        justify-content: flex-end;
+        margin-right: 16px;
+    }
+    @media (orientation: portrait) {
+        margin: 0;
+        height: auto; //borrar important */
+        justify-content: center;
+        margin-bottom: 4px;
+    }
+}
+.image {
+    width: 65px;
+    height: auto;
+    @media (max-width: 540px) {
+        &--mob {
+            display: inline-block;
+        }
+    }
+    @media (min-width: 541px) and (max-width: 1023px) 
+    and (min-height: 301px) and (max-height: 600px) {
+        &--tab {
+            display: inline-block;
+        }
+    }
+    @media (min-width: 541px) and (max-width: 1023px) 
+    and (min-height: 601px) {
+        &--desk {
+            display: inline-block;
+        }
+    }
+    @media (min-width: 1024px) and (max-width: 1399px) {
+        &--desk {
+            display: inline-block;
+        }
+    }
+    @media (min-width: 1400px) and (max-width: 1919px) {
+        &--hdesk {
+            display: inline-block;
+        }
+    }
+    @media (min-width: 1920px) and (max-width: 3839px) {
+        &--tv {
+            display: inline-block;
+        }
+    }
+    @media (min-width: 3840px) {
+        &--4k {
+            display: inline-block;
+        }
+    }
+    //Movil landscape mini
+    @media only screen 
+    and (max-height: 300px) 
+    and (orientation: landscape) {
+        &--mob {
+            display: inline-block;
+        }
+    }
+}
+.titleWrapper {
+    display: flex;
+    flex-direction: column;
+    @media (orientation: landscape) {
+        text-align: left;
+    }
+}
+.gameTitle {
+    max-width: 90%;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    line-height: 1.1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    @media (min-width: 845px) {
+        font-size: 24px;
+    }
+    @media (min-width: 1024px) {
+        font-size: 40px;
+    }
+    @media (min-width: 1920px) {
+        font-size: 64px;
+    }
+    @media (min-width: 3200px) {
+        font-size: 96px;
+    }
+    @media (orientation: landscape) and (max-height: 540px) {
+        font-size: 14px;
+    }
+}
+.gameType {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    line-height: 1;
+    transform: translateY(-4px);
+    @media (min-width: 845px) {
+        font-size: 18px;
+    }
+    @media (min-width: 1024px) {
+        font-size: 24px;
+    }
+    @media (min-width: 1920px) {
+        font-size: 40px;
+    }
+    @media (min-width: 3200px) {
+        font-size: 56px;
+    }
+    @media (orientation: landscape) and (max-height: 540px) {
+        font-size: 11px;
+    }
+}
+
+// Wrapper inicio y final
+.__cnt__ini,
+.__cnt__end {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 42%;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    box-shadow: 0 -1px 0 rgba(110,177,24,1);
+    pointer-events: none;
+    transform: translateY(150%);
+    transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1) 0.15s;
+    z-index: 2;
+    @media only screen and (orientation: landscape) {
+        height: 48%;
+    }
+    @media only screen and (orientation: landscape) and (max-height: 600px) {
+        height: 42%;
+        padding: 0;
+        align-items: flex-start;
+    }
+    &__deco {
+        position: fixed;
+        display: flex;
+        align-items: flex-start;
+        height: 30%;
+        //height: -webkit-fill-available;
+        width: 100%;
+        bottom: 100%;
+        overflow: hidden;
+        svg {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            bottom: -3px;
+            z-index: -1;
+        }
+    }
+    &__btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        max-height: 280px;
+        padding-bottom: 24px;
+        text-align: center;
+        // portraitt educaplay  
+        @media screen  
+        and  (orientation: portrait) {
+            max-height: 220px;
+        }
+        .btn {
+            margin-bottom: auto;
+            // portraitt educaplay  
+            @media screen 
+            and (max-height: 520px)  
+            and  (orientation: portrait) {
+                height: 2.5rem;
+            }
+            @media (orientation: landscape) and (max-height: 300px) {
+                height: 2.5rem;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                display: flex;
+                width: 100%;
+                height: 100%;
+                border-radius: 1.5rem;
+                pointer-events: none;
+                z-index: -1;
+                transition: box-shadow 0.2s ease-in-out;
+                @media (min-width: 768px) {
+                    .g__cnt__ini__btns .btn:before, .g__cnt__end__btns .btn:before {
+                        border-radius: 1.625rem;
+                    }
+                }
+                @media (min-width: 1024px) {
+                    .g__cnt__ini__btns .btn:before, .g__cnt__end__btns .btn:before {
+                        border-radius: 1.75rem;
+                        font-size: 1.25rem;
+                    }
+                }
+                @media (min-width: 1920px) {
+                    .g__cnt__ini__btns .btn:before, .g__cnt__end__btns .btn:before {
+                        border-radius: 2rem;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            &:active, &:focus {
+                &:before {
+                    transition: box-shadow 0.2s ease-in-out;
+                }
+            }
+            //animaciones hover svgs
+            .i {
+                &__replay {
+                    svg {
+                        // portrait educaplay  
+                        @media screen 
+                        and (max-height: 520px)  
+                        and  (orientation: portrait) {
+                            width: 16px;
+                            height: auto;
+                        }
+                        transform-origin: 12px 15.5px;
+                    }
+                }
+            }
+            &:hover, &:focus {
+                .i {
+                    &__play {
+                        svg {
+                            animation: shakeHorizontal 1s linear forwards;
+                        }
+                    }
+                    &__options {
+                        svg {
+                            animation: rotateMedio 1s ease-out forwards;
+                        }
+                    }
+                    &__replay {
+                        svg {
+                            animation: rotate 0.5s ease-in-out forwards;
+                        }
+                    }
+                }
+            }
+        }
+        .activityLogin {
+            margin-bottom: auto;
+        }
+    }
+    &__brand {
+        position: absolute;
+        bottom: 2px;
+        left: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        width: 100%;
+        opacity: 0.8;
+        &__educaplay {
+            svg {
+                width: 48px;
+                height: auto;
+            }
+        }
+        &__txt {
+            font-size: 8px;
+            font-weight: 200;
+            line-height: 1.5;
+            color: white;
+        }
+    }
+    &.act {
+        pointer-events: all;
+        transform: translateY(0);
+        transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1) 0.5s;
+    }
+}
+
