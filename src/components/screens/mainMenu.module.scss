@@ -170,24 +170,18 @@
     }
 }
 
-// Wrapper inicio y final
-.__cnt__ini,
-.__cnt__end {
-    position: fixed;
+.footerWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
     height: 42%;
-    font-family: "Nunito", Helvetica, Arial, sans-serif;
     box-shadow: 0 -1px 0 rgba(110,177,24,1);
-    pointer-events: none;
-    transform: translateY(150%);
-    transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1) 0.15s;
-    z-index: 2;
+
     @media only screen and (orientation: landscape) {
         height: 48%;
     }
@@ -196,148 +190,29 @@
         padding: 0;
         align-items: flex-start;
     }
-    &__deco {
-        position: fixed;
-        display: flex;
-        align-items: flex-start;
-        height: 30%;
-        //height: -webkit-fill-available;
-        width: 100%;
-        bottom: 100%;
-        overflow: hidden;
-        svg {
-            position: absolute;
-            width: 100%;
-            height: auto;
-            bottom: -3px;
-            z-index: -1;
-        }
-    }
-    &__btns {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        max-height: 280px;
-        padding-bottom: 24px;
-        text-align: center;
-        // portraitt educaplay  
-        @media screen  
-        and  (orientation: portrait) {
-            max-height: 220px;
-        }
-        .btn {
-            margin-bottom: auto;
-            // portraitt educaplay  
-            @media screen 
-            and (max-height: 520px)  
-            and  (orientation: portrait) {
-                height: 2.5rem;
-            }
-            @media (orientation: landscape) and (max-height: 300px) {
-                height: 2.5rem;
-            }
-            &:before {
-                content: '';
-                position: absolute;
-                display: flex;
-                width: 100%;
-                height: 100%;
-                border-radius: 1.5rem;
-                pointer-events: none;
-                z-index: -1;
-                transition: box-shadow 0.2s ease-in-out;
-                @media (min-width: 768px) {
-                    .g__cnt__ini__btns .btn:before, .g__cnt__end__btns .btn:before {
-                        border-radius: 1.625rem;
-                    }
-                }
-                @media (min-width: 1024px) {
-                    .g__cnt__ini__btns .btn:before, .g__cnt__end__btns .btn:before {
-                        border-radius: 1.75rem;
-                        font-size: 1.25rem;
-                    }
-                }
-                @media (min-width: 1920px) {
-                    .g__cnt__ini__btns .btn:before, .g__cnt__end__btns .btn:before {
-                        border-radius: 2rem;
-                        font-size: 1.5rem;
-                    }
-                }
-            }
-            &:active, &:focus {
-                &:before {
-                    transition: box-shadow 0.2s ease-in-out;
-                }
-            }
-            //animaciones hover svgs
-            .i {
-                &__replay {
-                    svg {
-                        // portrait educaplay  
-                        @media screen 
-                        and (max-height: 520px)  
-                        and  (orientation: portrait) {
-                            width: 16px;
-                            height: auto;
-                        }
-                        transform-origin: 12px 15.5px;
-                    }
-                }
-            }
-            &:hover, &:focus {
-                .i {
-                    &__play {
-                        svg {
-                            animation: shakeHorizontal 1s linear forwards;
-                        }
-                    }
-                    &__options {
-                        svg {
-                            animation: rotateMedio 1s ease-out forwards;
-                        }
-                    }
-                    &__replay {
-                        svg {
-                            animation: rotate 0.5s ease-in-out forwards;
-                        }
-                    }
-                }
-            }
-        }
-        .activityLogin {
-            margin-bottom: auto;
-        }
-    }
-    &__brand {
-        position: absolute;
-        bottom: 2px;
-        left: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2px;
-        width: 100%;
-        opacity: 0.8;
-        &__educaplay {
-            svg {
-                width: 48px;
-                height: auto;
-            }
-        }
-        &__txt {
-            font-size: 8px;
-            font-weight: 200;
-            line-height: 1.5;
-            color: white;
-        }
-    }
-    &.act {
-        pointer-events: all;
-        transform: translateY(0);
-        transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1) 0.5s;
-    }
 }
 
+.decoration {
+    display: flex;
+    align-items: flex-start;
+    height: 30%;
+    width: 100%;
+    // bottom: 100%;
+    overflow: hidden;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &Educaplay {
+        width: 48px;
+        height: auto;
+    }
+    &Txt {
+        font-size: 8px;
+        font-weight: 200;
+        line-height: 1.5;
+        color: white;
+    }
+}

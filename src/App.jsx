@@ -15,7 +15,7 @@ import MainMenu from './components/screens/MainMenu';
 function App() {
 
   const handleClick = () => {
-    console.log('Empieza!');
+    alert('Empieza!');
   }
 
   return (
