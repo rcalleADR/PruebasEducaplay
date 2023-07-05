@@ -171,6 +171,7 @@
 }
 
 .footerWrapper {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,12 +194,12 @@
 }
 
 .decoration {
-    display: flex;
-    align-items: flex-start;
-    height: 30%;
+    display: block;
+    position: absolute;
     width: 100%;
-    // bottom: 100%;
-    overflow: hidden;
+    height: auto;
+    left: 0;
+    bottom: calc(100% - 4px);
 }
 
 .brand {

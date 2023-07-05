@@ -24,8 +24,8 @@ function MainMenu(props) {
                     </div>
                 </div>
                 <div className={classes.footerWrapper}>
-                    <div className={classes.decoration}>
-                        <svg width="1152" height="52" viewBox="0 0 1152 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div>
+                        <svg width="1152" height="52" viewBox="0 0 1152 52" fill="none" xmlns="http://www.w3.org/2000/svg" className={classes.decoration}>
                             <path fill="#6EB118" d="M25.4294 0.945846L1127.43 20.2635C1140.79 20.4978 1151.5 31.3962 1151.5 44.7598V51.5H0.5V25.4421C0.5 11.7431 11.7325 0.705744 25.4294 0.945846Z" stroke="url(#paint0_linear_54_3)"></path>
                             <defs>
                             <linearGradient id="paint0_linear_54_3" x1="576.5" y1="10.0971" x2="575.99" y2="53.0096" gradientUnits="userSpaceOnUse">
