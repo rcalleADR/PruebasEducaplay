@@ -13,7 +13,7 @@ function MainMenu(props) {
     return (
         <>
             <div className={classes.background}>
-                <div className={classes.logoHeader}><EducaplayLogo width={96} height={88} /></div>
+                <div className={classes.logoHeader}><EducaplayLogo className={classes.logo} width={96} height={88} /></div>
                 <div className={classes.gameData}>
                     <div className={classes.imageWrapper}>
                         <img className={classes.image} width="360" height="360" src={gameData.imageSource} alt={gameData.type} />

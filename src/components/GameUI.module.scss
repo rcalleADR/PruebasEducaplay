@@ -22,12 +22,12 @@
     pointer-events: all;
     cursor: pointer;
     transition: all 0.2s ease-out 0.2s;
-    @media (max-width: 768px) {
-        width: 40px;
-        height: 40px;
-        margin-left: 6px;
-        box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2), 0 0 0 3px rgba(0, 0, 0, 0.0), 0 0.5px 0 0 rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255,255,255,0.5);
-    }
+    // @media (min-width) {
+    //     width: 40px;
+    //     height: 40px;
+    //     margin-left: 6px;
+    //     box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2), 0 0 0 3px rgba(0, 0, 0, 0.0), 0 0.5px 0 0 rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255,255,255,0.5);
+    // }
     &:hover, &:focus {
         background: rgba(255,255,255,0.8);
         transform: scale(1.05);
@@ -48,10 +48,8 @@
     align-items: center;
     pointer-events: all;
     // mouse devices */
-    @media (pointer: fine) {
-        display: inline-flex;
-    }
-    @media only screen and (hover: none) {
+    display: inline-flex;
+    @media (hover: none) {
         display: none;
     }
 
@@ -103,9 +101,7 @@
     opacity: 0;
     transform: translateY(200px);
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    @media screen and (orientation: landscape) {
-        transform: translateX(0) translateY(200px);
-    }
+
     .btn {
         position: relative;
         display: flex;
