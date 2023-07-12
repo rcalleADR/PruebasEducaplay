@@ -40,8 +40,7 @@ function MainMenu(props) {
                     <Button className='classssse' icon={<StartIcon />} onClick={onStart}>
                         Comenzar
                     </Button>
-                    <div className={classes.footerBottom}>
-                        <GameUI />
+                        
                         <div className={classes.brand}>
                             <span>
                                 <svg className={classes.brandEducaplay} width="197" height="45" viewBox="0 0 197 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,8 +49,8 @@ function MainMenu(props) {
                             </span>
                             <span className={classes.brandTxt}>All rights reserved</span>
                         </div>
-                    </div>
                 </div>
+                <GameUI />
                 {/* <hr />
                 <Button className='classssse' icon={<RestartIcon />}>
                     Reintentar

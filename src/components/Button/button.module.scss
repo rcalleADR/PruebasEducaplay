@@ -17,6 +17,8 @@
     color: #070e00;
     background: #f2ca0d;
     border: 1px solid #f2ca0d;
+    border: 1px solid transparent;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.3);
 
     &:not(:disabled) {
         cursor: pointer;
