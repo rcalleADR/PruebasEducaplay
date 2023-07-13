@@ -6,7 +6,7 @@ function Button(props) {
     const { children, className, icon, disabled = false, onClick } = props;
 
     return (
-        <button id="play" className={clsx(classes.button, className)} disabled={disabled} onClick={onClick}>
+        <button className={clsx(classes.button, className)} disabled={disabled} onClick={onClick}>
             <span className={classes.svg}>
                 {icon}
             </span>

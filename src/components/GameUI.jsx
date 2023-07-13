@@ -1,7 +1,8 @@
 import FullscreenInIcon from '../icons/FullscreenInIcon';
-import FullscreenOutIcon from '../icons/FullscreenOutIcon';
+// import FullscreenOutIcon from '../icons/FullscreenOutIcon';
 import OptionsIcon from '../icons/OptionsIcon';
 import classes from './GameUI.module.scss'
+import IconButton from './IconButton';
 
 function GameUI() {
     return(
@@ -21,7 +22,17 @@ function GameUI() {
                 </button>
             </div> */}
 
-            <div id="options" className={classes.options}>
+            <IconButton className={classes.options} icon={<OptionsIcon />}>
+
+            </IconButton>
+
+            <IconButton className={classes.fullscreen} icon={<FullscreenInIcon />}>
+                {/* <span className={classes.fullscreenOut}>
+                    <FullscreenOutIcon />
+                </span> */}
+            </IconButton>
+
+            {/* <div id="options" className={classes.options}>
                 <div className={classes.buttonWrapper}>
                     <span className="btn__i i__options">
                         <OptionsIcon />
@@ -38,7 +49,7 @@ function GameUI() {
                         <FullscreenOutIcon />
                     </span>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
