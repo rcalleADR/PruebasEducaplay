@@ -7,8 +7,8 @@ import MainMenu from './components/screens/MainMenu';
   }
 
   const mockGame = {
-    type: 'Relacionar movidas',
-    title: 'Componentes de React',
+    type: 'Relacionar Columnas',
+    title: 'Psico Mosaico Prosaico',
     imageSource: 'https://es.rcalle.dev.educaplay.com/v2/r1/img/activities/RELACIONAR_COLUMNAS/logoActivity.png?v=20230202'
   }
 
