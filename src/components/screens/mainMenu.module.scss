@@ -7,7 +7,6 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    // opacity: 0.2;
     background-color: #0B1500;
 }
 
@@ -202,7 +201,7 @@
 }
 
 .buttonWrapper {
-    padding-bottom: 68px;
+    padding-bottom: 67px;
 }
 
 .decoration {
@@ -218,6 +217,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    margin-left: 25px;
+    gap: 2px;
+    margin-bottom: 2px;
+    opacity: 0.8;
     &Educaplay {
         width: 48px;
         height: auto;
