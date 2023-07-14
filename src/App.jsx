@@ -1,8 +1,8 @@
 import MainMenu from './components/screens/MainMenu';
 
   const mockUser = {
-    name: 'Edu',
-    lastname: 'Caplay',
+    name: 'Ricardo',
+    lastname: '.',
     imageSource: 'https://d2mxgq73d0f24i.cloudfront.net/images/imagenes/img_6893755_2184.jpg'
   }
 

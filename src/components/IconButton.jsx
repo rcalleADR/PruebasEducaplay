@@ -7,9 +7,7 @@ function IconButton(props) {
 
     return (
         <button type={type} className={clsx(classes.button, className)} onClick={onClick}>
-            <span className={classes.svgWrapper}>
-                {icon}
-            </span>
+            {icon}
         </button>
     );
 }

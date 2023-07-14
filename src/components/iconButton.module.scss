@@ -9,7 +9,11 @@
     background-color: rgba(255,255,255,0.3);
     border: 0;
     padding: 0;
-    box-shadow: 0 6px 0 0 rgba(0, 0, 0, 0.2), 0 0 0 3px rgba(0, 0, 0, 0.0), 0 0.5px 0 0 rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255,255,255,0.5);
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2), 0 0 0 3px rgba(0, 0, 0, 0.0), 0 0.5px 0 0 rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255,255,255,0.5);
+    
+    svg {
+        stroke-width: 1.65px
+    }
     
     border-radius: variables.$radius-sm;
     cursor: pointer;
@@ -26,15 +30,5 @@
                 stroke: rgb(110, 177, 24);
             }
         }
-    }
-}
-
-.fullscreen {
-    justify-content: center;
-    align-items: center;
-    pointer-events: all;
-    // mouse devices */
-    @media (hover: none) {
-        display: none;
     }
 }
