@@ -50,24 +50,26 @@
     flex-direction: column;
     text-align: center;
     padding-bottom: 45px;
+    width: 100%;
     @media (orientation: landscape) {
         flex-direction: row;
     }
     @media (min-width: #{map-get($breakpoints, 'md' )}) {
-            padding-top: 80px;
+            // padding-top: 80px;
+            padding-bottom: 0;
     }
     @media (min-width: #{map-get($breakpoints, 'lg' )}) {
-            padding-top: 96px;
+            // padding-top: 6px;
     }
     @media (min-width: #{map-get($breakpoints, 'xxxl' )}) {
-            padding-top: 124px;
+            // padding-top: 124px;
     }
     @media (min-width: 2800px) {
-        padding-top: 224px;
+        // padding-top: 224px;
     }
     //Movil landscape mini
     @media (max-height: 300px) {
-        padding-top: 48px;
+        // padding-top: 48px;
     }
 }
 .imageWrapper {
@@ -75,6 +77,7 @@
     align-items: center;
     min-width: 33%;
     height: 100%;
+    margin-bottom: 4px;
     max-height: -webkit-fill-available;
     @media (orientation: landscape) {
         justify-content: flex-end;
@@ -84,12 +87,13 @@
         margin: 0;
         height: auto; //borrar important */
         justify-content: center;
-        margin-bottom: 4px;
+        
     }
 }
 .image {
-    width: 65px;
+    width: 80px;
     height: auto;
+    margin-bottom: 4px;
     @media (min-width: #{map-get($breakpoints, 'sm' )}) {
         width: 96px;
     }
@@ -144,9 +148,6 @@
     @media (min-width: #{map-get($breakpoints, 'xxxl' )}) {
         font-size: 64px;
     }
-    @media (min-width: 3200px) {
-        font-size: 96px;
-    }
     @media (max-height: 540px) {
         font-size: 14px;
     }
@@ -167,9 +168,6 @@
     }
     @media (min-width: #{map-get($breakpoints, 'xxxl' )}) {
         font-size: 40px;
-    }
-    @media (min-width: 3200px) {
-        font-size: 56px;
     }
     @media (max-height: 540px) {
         font-size: 11px;
@@ -196,12 +194,17 @@
     @media only screen and (orientation: landscape) and (max-height: 600px) {
         height: 42%;
         padding: 0;
-        align-items: flex-start;
+        // align-items: flex-start;
     }
 }
 
 .buttonWrapper {
     padding-bottom: 67px;
+    @media only screen and (orientation: landscape) {
+        height: 48%;
+        min-width: 300px;
+        height: 3.25rem;
+    }
 }
 
 .decoration {
@@ -218,7 +221,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-left: 25px;
+    // padding-left: 25px;
     gap: 2px;
     margin-bottom: 2px;
     opacity: 0.8;

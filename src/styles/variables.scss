@@ -1,1 +1,23 @@
-$radius-sm: 4px
+$radius-sm: 4px;
+
+$breakpoints : (
+    xs: 0, 
+    sm: 544px, //in-mobile
+    md: 768px, //in-desktop
+    lg: 1024px, //in-tablet
+    xl: 1280px, //in-half-desktop
+    xxl: 1400px, //in-television
+    xxxl: 1920px, //in-hd-screen
+);
+
+:root {
+    --text-2xl: calc(20px + 0.75vw);
+    --text-xl: clamp(14px, calc(10px + 1.5vw), 40px);
+    --text-lg: 18px;
+    --text-md: 16px;
+    --text-sm: 14px;
+    --text-xs: 12.5px;
+    --text-2xs: 9px;
+
+    --main-font-family: 'Nunito', "Segoe UI", Segoe, Helvetica, Arial, sans-serif;
+}
