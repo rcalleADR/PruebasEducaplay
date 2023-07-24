@@ -1,3 +1,30 @@
+:root {
+    --text-2xl: calc(16px + 2vmin);
+    --text-xl: max(14px, calc(10px + 2vmin));
+    --text-lg: 18px;
+    --text-md: 16px;
+    --text-sm: 14px;
+    --text-xs: 12.5px;
+    --text-2xs: 9px;
+
+    @media (min-width: 845px) {
+        --text-sm: 18px;
+    }
+    @media (min-width: 1024px) {
+        --text-2xl: calc(12px + 2.75vmin);
+        --text-xl: calc(8px + 2.5vmin);
+        --text-lg: 24px;
+        --text-md: 20px
+    }
+    @media (min-width: 1920px) {
+        --text-2xl: min(calc(10px + 3vmin), 64px);
+        --text-xl: min(calc(6px + 2.75vmin), 40px);
+        --text-md: 24px
+    }
+    
+    height: 100%;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -13,9 +40,5 @@ button:not(:disabled) {
 body {
     font-family: 'Nunito', Arial, Helvetica, sans-serif;
     margin: 0;
-    height: 100%;
-}
-
-:root {
     height: 100%;
 }

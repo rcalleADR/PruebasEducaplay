@@ -4,7 +4,7 @@ import defaultAvatar from '../../assets/usuario.svg'
 
 function ActivityLogin(props) {
     const user = props.user;
-    const logged = false; //is the user logged
+    const logged = true; //is the user logged
 
     if (logged) {
         return (

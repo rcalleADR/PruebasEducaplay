@@ -10,14 +10,4 @@ $breakpoints : (
     xxxl: 1920px, //in-hd-screen
 );
 
-:root {
-    --text-2xl: calc(20px + 0.75vw);
-    --text-xl: clamp(14px, calc(10px + 1.5vw), 40px);
-    --text-lg: 18px;
-    --text-md: 16px;
-    --text-sm: 14px;
-    --text-xs: 12.5px;
-    --text-2xs: 9px;
-
-    --main-font-family: 'Nunito', "Segoe UI", Segoe, Helvetica, Arial, sans-serif;
-}
+$text-xl: var(--text-xl);

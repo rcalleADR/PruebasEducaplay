@@ -1,3 +1,4 @@
+@use "../../styles/variables.scss" as *;
 @import "../breakpoints.scss";
 
 .background {
@@ -19,7 +20,6 @@
     // @media only screen  and (max-height: 300px) and (orientation: landscape) {
     //     padding: 8px 0;
     // }
-    
 }
 
 .logo {
@@ -129,8 +129,7 @@
     }
 }
 .gameTitle {
-    max-width: 90%;
-    font-size: 20px;
+    font-size: $text-xl;
     font-weight: 700;
     letter-spacing: 0.1px;
     line-height: 1.1;
@@ -139,18 +138,18 @@
     text-shadow: 0 2px 0 #070e00;
     color: #fafff3;
     margin: 0;
-    @media (min-width: #{map-get($breakpoints, 'md' )}) {
-        font-size: 24px;
-    }
-    @media (min-width: #{map-get($breakpoints, 'lg' )}) {
-        font-size: 40px;
-    }
-    @media (min-width: #{map-get($breakpoints, 'xxxl' )}) {
-        font-size: 64px;
-    }
-    @media (max-height: 540px) {
-        font-size: 14px;
-    }
+    // @media (min-width: #{map-get($breakpoints, 'md' )}) {
+    //     font-size: 24px;
+    // }
+    // @media (min-width: #{map-get($breakpoints, 'lg' )}) {
+    //     font-size: 40px;
+    // }
+    // @media (min-width: #{map-get($breakpoints, 'xxxl' )}) {
+    //     font-size: 64px;
+    // }
+    // @media (max-height: 540px) {
+    //     font-size: 14px;
+    // }
 }
 .gameType {
     margin-top: 0;
