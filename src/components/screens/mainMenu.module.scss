@@ -129,7 +129,7 @@
     }
 }
 .gameTitle {
-    font-size: $text-xl;
+    font-size: $text-2xl;
     font-weight: 700;
     letter-spacing: 0.1px;
     line-height: 1.1;
@@ -153,7 +153,7 @@
 }
 .gameType {
     margin-top: 0;
-    font-size: 14px;
+    font-size: $text-xl;
     font-weight: 900;
     letter-spacing: 1px;
     line-height: 1;
@@ -229,7 +229,7 @@
         height: auto;
     }
     &Txt {
-        font-size: 8px;
+        font-size: $text-2xs;
         font-weight: 200;
         line-height: 1.5;
         color: white;

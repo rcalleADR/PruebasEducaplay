@@ -1,3 +1,5 @@
+@use "../../styles/variables.scss" as *;
+
 // ================== Login ==================== */
 .activityLogin {
     display: flex;
@@ -39,7 +41,7 @@
         justify-content: flex-start;
         align-items: center;
         color: white;
-        font-size: 200px;
+        font-size: $text-lg;
         font-weight: 900;
         letter-spacing: 0.6px;
         line-height: 20px;
