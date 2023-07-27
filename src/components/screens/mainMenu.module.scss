@@ -52,10 +52,11 @@
     padding-bottom: 45px;
     width: 100%;
     @media (orientation: landscape) {
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px
     }
     @media (min-width: #{map-get($breakpoints, 'md' )}) {
-            // padding-top: 80px;
             padding-bottom: 0;
     }
     @media (min-width: #{map-get($breakpoints, 'lg' )}) {
@@ -75,13 +76,11 @@
 .imageWrapper {
     display: flex;
     align-items: center;
-    min-width: 33%;
     height: 100%;
     margin-bottom: 4px;
     max-height: -webkit-fill-available;
     @media (orientation: landscape) {
         justify-content: flex-end;
-        margin-right: 16px;
     }
     @media (orientation: portrait) {
         margin: 0;
@@ -138,18 +137,6 @@
     text-shadow: 0 2px 0 #070e00;
     color: #fafff3;
     margin: 0;
-    // @media (min-width: #{map-get($breakpoints, 'md' )}) {
-    //     font-size: 24px;
-    // }
-    // @media (min-width: #{map-get($breakpoints, 'lg' )}) {
-    //     font-size: 40px;
-    // }
-    // @media (min-width: #{map-get($breakpoints, 'xxxl' )}) {
-    //     font-size: 64px;
-    // }
-    // @media (max-height: 540px) {
-    //     font-size: 14px;
-    // }
 }
 .gameType {
     margin-top: 0;
@@ -159,18 +146,6 @@
     line-height: 1;
     color: #6eb118;
     text-shadow: 0 2px 0 black;
-    @media (min-width: #{map-get($breakpoints, 'md' )}) {
-        font-size: 18px;
-    }
-    @media (min-width: #{map-get($breakpoints, 'lg' )}) {
-        font-size: 24px;
-    }
-    @media (min-width: #{map-get($breakpoints, 'xxxl' )}) {
-        font-size: 40px;
-    }
-    @media (max-height: 540px) {
-        font-size: 11px;
-    }
 }
 
 .footerWrapper {

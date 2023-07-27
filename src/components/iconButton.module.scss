@@ -1,11 +1,12 @@
 @use  '../styles/variables';
+@import "./breakpoints.scss";
 
 .button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 40px;
-    height: 40px;
+    aspect-ratio: 1/1;
     background-color: rgba(255,255,255,0.3);
     border: 0;
     padding: 0;
@@ -13,6 +14,10 @@
     
     svg {
         stroke-width: 1.65px
+    }
+
+    @media (min-width: #{map-get($breakpoints, 'md' )}) {
+        width: 48px;
     }
     
     border-radius: variables.$radius-sm;

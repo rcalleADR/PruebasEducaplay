@@ -7,7 +7,7 @@
     align-items: center;
     max-width: calc(100% - 32px);
     font-family: 'Nunito', Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: $text-lg;
     letter-spacing: 0.5px;
     transition: all 0.2s ease-in-out;
 }
@@ -41,7 +41,7 @@
         justify-content: flex-start;
         align-items: center;
         color: white;
-        font-size: $text-lg;
+        // font-size: $text-lg;
         font-weight: 900;
         letter-spacing: 0.6px;
         line-height: 20px;
@@ -52,17 +52,6 @@
             display: inline-flex;
             font-family: "Nunito", Helvetica, Arial, sans-serif;
             line-height: 1;
-            font-size: 20px;
-
-            // // portraitt educaplay  
-            // @media screen and (max-width: 570px) and (orientation: portrait) {
-            //     font-size: 14px;
-            // }
-
-            // // Lanscape educaplay  
-            // @media screen and (max-width: 1024px) {
-            //     font-size: 20px;
-            // }
         }
     }
 
@@ -71,13 +60,9 @@
         margin-right: 0.25rem;
     }
     .notIdentified {
-        font-size: 18px;
+        // font-size: $text-lg;
         font-weight: 600;
         text-decoration: none;
-
-        // @media (orientation: landscape) and (max-height: 300px) {
-        //     font-size: 14px;
-        // }
     }
 
     .name {
