@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import EducaplayLogo from '../EducaplayLogo';
 import classes from './mainMenu.module.scss'
 import GameUI from '../GameUI';
+import GameTimer from '../GameTimer';
 
 function MainMenu(props) {
     const { onStart, user, gameData } = props;
@@ -53,10 +54,7 @@ function MainMenu(props) {
                         </div>
                 </div>
                 <GameUI />
-                {/* <hr />
-                <Button className='classssse' icon={<RestartIcon />}>
-                    Reintentar
-                </Button> */}
+                <GameTimer />
             </div>
         </>
     );

@@ -1,0 +1,18 @@
+@use "../styles/variables.scss" as *;
+
+.wrapper {
+    display: inline-flex;
+    padding: clamp(3px, 5vmin, 15px) clamp(15px, 5.5vmin, 54px);
+    border-radius: 9999px;
+    background: #fafff3;
+    border: 8px solid #6eb118;
+    box-shadow: 0 3px 0 rgba(7, 14, 0, 0.3), 0 0.5px 0 rgba(7, 14, 0, 0.8);//0 6px 0 rgba(7, 14, 0, 0.3), 0 0.5px 0 rgba(7, 14, 0, 0.8);
+}
+
+.timer {
+    color: #2b4b04;
+    font-size: $text-xl;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    line-height: 1;
+}
