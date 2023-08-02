@@ -2,11 +2,19 @@
 
 .wrapper {
     display: inline-flex;
-    padding: clamp(3px, 5vmin, 15px) clamp(15px, 5.5vmin, 54px);
+    padding: 6.5px 18.5px;
     border-radius: 9999px;
     background: #fafff3;
-    border: 8px solid #6eb118;
+    border: 5px solid #6eb118;
     box-shadow: 0 3px 0 rgba(7, 14, 0, 0.3), 0 0.5px 0 rgba(7, 14, 0, 0.8);//0 6px 0 rgba(7, 14, 0, 0.3), 0 0.5px 0 rgba(7, 14, 0, 0.8);
+
+    @media (min-width: #{map-get($breakpoints, 'md' )}) {
+        padding: 6.5px 32bpx;
+        border: 8px solid #6eb118;
+    }
+    @media (min-width: #{map-get($breakpoints, 'lg' )}) {
+        padding: 15px 54px;
+    }
 }
 
 .timer {

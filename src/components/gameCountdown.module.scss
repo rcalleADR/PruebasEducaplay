@@ -1,0 +1,43 @@
+@use "../styles/variables.scss" as *;
+
+.wrapper {
+    position: relative;
+//     display: inline-flex;
+//     padding: clamp(3px, 5vmin, 15px) clamp(15px, 5.5vmin, 54px);
+//     border-radius: 9999px;
+//     background: #fafff3;
+//     border: 8px solid #6eb118;
+//     box-shadow: 0 3px 0 rgba(7, 14, 0, 0.3), 0 0.5px 0 rgba(7, 14, 0, 0.8);//0 6px 0 rgba(7, 14, 0, 0.3), 0 0.5px 0 rgba(7, 14, 0, 0.8);
+}
+
+.timerComponent {
+    position: absolute;
+    left: 57px;
+    top: 25px;
+}
+
+.countdownWrapper {
+    position: absolute;
+}
+
+.countdown {
+    position: absolute;
+    width: 110%;
+    height: 90%;
+    // left: 0;
+    // top: 0;
+    // bottom: 14%;
+    // background-color: #ffffff66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // position: absolute;
+    // left: 35px;
+    // top: 75px;
+    color: #2b4b04;
+    font-size: $text-xl;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    line-height: 1;
+}

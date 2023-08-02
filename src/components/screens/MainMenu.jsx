@@ -7,9 +7,13 @@ import EducaplayLogo from '../EducaplayLogo';
 import classes from './mainMenu.module.scss'
 import GameUI from '../GameUI';
 import GameTimer from '../GameTimer';
+import GameCountdown from '../GameCountdown';
+import { useState } from 'react';
 
 function MainMenu(props) {
     const { onStart, user, gameData } = props;
+
+    const [startTime, setStartTime] = useState(35);
 
     return (
         <>
@@ -54,7 +58,8 @@ function MainMenu(props) {
                         </div>
                 </div>
                 <GameUI />
-                <GameTimer />
+                {/* <GameTimer /> */}
+                <GameCountdown startTime={startTime} onFinish={() => console.log('Acabado')} />
             </div>
         </>
     );
