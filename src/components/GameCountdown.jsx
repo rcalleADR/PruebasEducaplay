@@ -47,7 +47,7 @@ function GameCountdown({ startTime, onFinish }) {
                 
                 {/* <div className={classes.timer}>{formatTime(time)}</div> */}
                 <div className="clk__st">
-                    <svg width="80" height="80" viewBox="0 0 90 90" fill="none">
+                    <svg className={classes.svgCircle} width="80" height="80" viewBox="0 0 90 90" fill="none">
                     {/* <svg width="195" height="98" viewBox="0 0 195 98" fill="none"> */}
                         <g className="clk__st__i-bg">
                             {/* <path className="clk__st__ll-bg" d="M65.7373 76.1426C81.1989 65.128 84.8468 47.3002 82.5557 31.9185H164.418C175.707 31.9185 186.125 41.8412 186.125 54.0305C186.125 66.2198 175.707 76.1426 164.418 76.1426H65.7373Z" fill="rgba(250,255,243,0.7)"></path> */}

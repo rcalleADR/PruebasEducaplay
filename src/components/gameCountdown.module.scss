@@ -14,10 +14,29 @@
     position: absolute;
     left: 57px;
     top: 25px;
+    @media (min-width: #{map-get($breakpoints, 'md' )}) {
+        left: 65px;
+        top: 35px;
+    }
+    @media (min-width: #{map-get($breakpoints, 'lg' )}) {
+        left: 75px;
+        top: 40px;
+    }
 }
 
 .countdownWrapper {
     position: absolute;
+}
+
+.svgCircle {
+    @media (min-width: #{map-get($breakpoints, 'md' )}) {
+        width: 105px;
+        height: 105px;
+    }
+    @media (min-width: #{map-get($breakpoints, 'lg' )}) {
+        width: 135px;
+        height: 135px;
+    }
 }
 
 .countdown {

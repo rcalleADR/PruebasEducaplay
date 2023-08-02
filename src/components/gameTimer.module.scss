@@ -9,7 +9,7 @@
     box-shadow: 0 3px 0 rgba(7, 14, 0, 0.3), 0 0.5px 0 rgba(7, 14, 0, 0.8);//0 6px 0 rgba(7, 14, 0, 0.3), 0 0.5px 0 rgba(7, 14, 0, 0.8);
 
     @media (min-width: #{map-get($breakpoints, 'md' )}) {
-        padding: 6.5px 32bpx;
+        padding: 6.5px 32px;
         border: 8px solid #6eb118;
     }
     @media (min-width: #{map-get($breakpoints, 'lg' )}) {
