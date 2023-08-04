@@ -11,6 +11,9 @@
 }
 
 .timerComponent {
+    .countdown {
+        margin-left: 10px;
+    }
     position: absolute;
     left: 57px;
     top: 25px;
@@ -51,9 +54,6 @@
     justify-content: center;
     align-items: center;
 
-    // position: absolute;
-    // left: 35px;
-    // top: 75px;
     color: #2b4b04;
     font-size: $text-xl;
     font-weight: 900;

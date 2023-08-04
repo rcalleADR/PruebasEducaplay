@@ -1,7 +1,10 @@
-import classes from './gameTimer.module.scss'
+import classes from './gameTimer.module.scss';
+import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
+import clsx from 'clsx';
 
-function GameTimer() {
+function GameTimer(props) {
+    const { className } = props;
     const [time, setTime] = useState(0);
 
     useEffect(() => {
@@ -23,9 +26,13 @@ function GameTimer() {
 
     return (
         <div className={classes.wrapper}>
-            <div className={classes.timer}>{formatTime(time)}</div>
+            <div className={clsx(classes.timer, className)}>{formatTime(time)}</div>
         </div>
     );
+}
+
+GameTimer.propTypes = {
+    className: PropTypes.string
 }
 
 export default GameTimer;

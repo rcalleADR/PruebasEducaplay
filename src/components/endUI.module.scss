@@ -1,0 +1,28 @@
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 16px 64px;
+    width: 100%;
+    max-width: 500px;
+    background: #112000;
+    color: #fafff3;
+}
+
+.scoreWrapper {
+    text-transform: uppercase;
+}
+
+.scoreLine {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fafff3;
+}
+
+.firstScoreLine {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid #fafff3;
+}
