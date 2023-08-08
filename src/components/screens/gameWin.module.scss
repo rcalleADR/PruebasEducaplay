@@ -1,0 +1,30 @@
+.background {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200%;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: -50%;
+    right: 0;
+    overflow: hidden;
+}
+
+.svg {
+    width: 1600px;
+    height: auto;
+    opacity: 0.3;
+    animation: rotate 60s linear forwards infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    
+    to {
+        transform: rotate(359deg);
+    }
+}

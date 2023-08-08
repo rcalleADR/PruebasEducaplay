@@ -1,3 +1,5 @@
+@use "../styles/variables.scss" as *;
+
 .background {
     display: flex;
     flex-direction: column;
@@ -5,7 +7,6 @@
     align-items: center;
     padding: 24px 16px 64px;
     width: 100%;
-    max-width: 500px;
     background: #112000;
     color: #fafff3;
 }
@@ -13,11 +14,22 @@
 .shareWrapper {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 32px 0;
+    gap: 16px;
+    padding: 32px 0 48px 0;
+    font-size: $text-md;
 }
 
-.shareAnchor {
+.linkWrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    @media (min-width: #{map-get($breakpoints, 'lg' )}) {
+        gap: 8px;
+    }
+}
+
+.shareLink{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,10 +37,15 @@
     aspect-ratio: 1/1;
     border-radius: 4px;
     background: #6eb118;
+
+    @media (min-width: #{map-get($breakpoints, 'lg' )}) {
+        width: 48px;
+    }
 }
 
 .scoreWrapper {
     width: 100%;
+    max-width: 500px;
     text-transform: uppercase;
     padding: 32px 0;
 }
@@ -43,21 +60,26 @@
 }
 
 .firstScoreLine {
-    padding: 0 16px;
-    display: flex;
-    height: 48px;
-    justify-content: space-between;
-    align-items: center;
     border-radius: 8px;
     border: 1px solid #fafff3;
 }
 
 .scoreTitle {
-    font-size: var(--text-sm);
+    font-size: 14px;//var(--text-sm);
     font-weight: 700;
 }
 
 .scoreValue {
-    font-size: var(--text-lg);
+    font-size: 20px;//var(--text-lg);
     font-weight: 900;
+}
+
+.reports {
+    padding: 32px 0;
+}
+
+.reportsButton {
+    color: white;
+    background: #6eb118;
+    border: 1px solid #6eb118;
 }

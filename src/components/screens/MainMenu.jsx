@@ -55,7 +55,6 @@ function MainMenu(props) {
                         </div>
                 </div>
                 <GameUI />
-                <EndUI user={user} onStart={onStart} />
             </div>
         </>
     );

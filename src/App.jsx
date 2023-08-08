@@ -1,3 +1,4 @@
+import GameWin from './components/screens/GameWin';
 import MainMenu from './components/screens/MainMenu';
 
   const mockUser = {
@@ -19,7 +20,7 @@ function App() {
   }
 
   return (
-    <MainMenu user={mockUser} onStart={handleClick} gameData={mockGame} />
+    <GameWin user={mockUser} onStart={handleClick} gameData={mockGame} />
   )
 }
 
