@@ -1,3 +1,4 @@
+import GameOver from './components/screens/GameOver';
 import GameWin from './components/screens/GameWin';
 import MainMenu from './components/screens/MainMenu';
 
@@ -20,7 +21,7 @@ function App() {
   }
 
   return (
-    <GameWin user={mockUser} onStart={handleClick} gameData={mockGame} />
+    <GameOver user={mockUser} onStart={handleClick} gameData={mockGame} />
   )
 }
 
